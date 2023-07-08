@@ -1,0 +1,48 @@
+#ifndef _CUCD_WORKSPACE_H_
+#define _CUCD_WORKSPACE_H_
+
+//// DSP Header for CuCD Workbench ////
+#include "lib/CuCD_lib/include/cucd_defines.h"
+
+// LIBRARY DEFAULTS
+
+typedef struct {
+uint32_t checksum;
+} OutType;
+
+typedef struct {
+uint32_t checksum;
+} InType;
+
+// [IMPORTANT! This must be set by user each time that 'struct InType' changes]
+// ---If this file was generated automatically ignore this commentary---
+//
+// The arrays below contains the size of the variables in the 'struct InType' and 'struct OutType'. 
+// Possible values listed below:
+//
+// 'variable type'      [ MIN_VALUE, MAX_VALUE ]  'variable size (expressed in bytes)'   =  ID_CODE
+//
+// Integer variables:
+// 'int'                [ -2^31 - 1, 2^31 - 1 ]                     4                    =  INT_SIZE
+// 'unsigned int'       [ 0        , 2^32 - 1 ]                     4                    =  UINT_SIZE
+// 'long long'          [ -2^63 - 1, 2^63 - 1 ]                     8                    =  LONGLONG_SIZE
+// 'unsigned long long' [ 0        , 2^64 - 1 ]                     8                    =  ULONGLONG_SIZE
+//
+// Floating point variables:
+// 'float'              [ -128.0   , 127.0    ]                     4                    =  FLOAT_SIZE
+// 'double'             [ -~10^300 , ~10^300  ]                     8                    =  DOUBLE_SIZE
+//
+
+#ifndef CUCD_ONLY_EXTERN
+const uint8_t   CUCD_CYCLES_UNTIL_I2C_SWITCH     = 10;
+#else
+extern const uint8_t   CUCD_CYCLES_UNTIL_I2C_SWITCH;
+extern const uint8_t   CUCD_OUT_VARIABLES_NUM;
+extern const DataSizes CUCD_INSIZEARRAY[];
+extern const DataSizes CUCD_OUTSIZEARRAY[];
+#endif
+
+// [END IMPORTANT]
+
+//// End DSP Header for CuCD Workbench ////
+#endif // _CUCD_WORKBENCH_H_

@@ -1,0 +1,33 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/plot.jpg</file>
+        <file>images/connection-established.png</file>
+        <file>images/connection-lost.png</file>
+        <file>images/file-open.png</file>
+        <file>images/good.png</file>
+        <file>images/save.png</file>
+        <file>images/settings.png</file>
+        <file>images/wrong.png</file>
+        <file>images/escudo_utfsm.gif</file>
+        <file>images/icon-future.gif</file>
+        <file>images/icon-network.png</file>
+        <file>images/icon-graph.png</file>
+        <file>images/icon-graph2.png</file>
+        <file>images/sw-off-64.png</file>
+        <file>images/sw-off-128.png</file>
+        <file>images/sw-on-64.png</file>
+        <file>images/sw-on-128.png</file>
+        <file>images/control-panel.png</file>
+        <file>images/variable.gif</file>
+        <file>images/control-panel2.png</file>
+        <file>images/up-arrow-24.png</file>
+        <file>images/down-arrow-24.png</file>
+        <file>images/up-arrow-24-disabled.png</file>
+        <file>images/down-arrow-24-disabled.png</file>
+        <file>images/cucd_workspace.template</file>
+        <file>images/play_button.png</file>
+        <file>images/csv.jpg</file>
+        <file>images/left_arrow.png</file>
+        <file>images/right_arrow.png</file>
+    </qresource>
+</RCC>
